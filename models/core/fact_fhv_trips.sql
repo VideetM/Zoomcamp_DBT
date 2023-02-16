@@ -14,6 +14,7 @@ dim_zones as (
 )
 select fhv_data.tripid,
     fhv_data.dispatching_base_num,
+    fhv_data.affiliated_base_number,
     fhv_data.pickup_locationid,
     fhv_data.dropoff_locationid,
     fhv_data.pickup_datetime,
