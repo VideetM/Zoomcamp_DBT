@@ -1,4 +1,4 @@
-{{ config(materialized='view') }}
+{{ config(materialized="view") }}
 
 with
     trip_data as (
@@ -17,13 +17,9 @@ with
 
             -- timestamps
             cast(pickup_datetime as timestamp) as pickup_datetime,
-            cast(dropoff_datetime as timestamp) as dropoff_datetime,
+            cast(dropoff_datetime as timestamp) as dropoff_datetime
 
-            --month 
-            extract(month from pickup_datetime) as pickup_month,
-            extract(month from dropoff_datetime) as dropoff_month
-
-
+        -- month 
         from {{ source("staging", "fhv_data") }}
     )
 
