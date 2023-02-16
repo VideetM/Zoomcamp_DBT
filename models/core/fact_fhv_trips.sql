@@ -20,7 +20,9 @@ select fhv_data.tripid,
     fhv_data.pickup_datetime,
     fhv_data.dropoff_datetime,
     fhv_data.sr_flag,
-    fhv_data.service_type
+    fhv_data.service_type,
+    fhv_data.pickup_month,
+    fhv_data.dropoff_month
   
 from fhv_data
 inner join dim_zones as pickup_zone
