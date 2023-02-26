@@ -1,15 +1,19 @@
-Welcome to your new dbt project!
+Welcome to your My Data Engineering dbt project!
+
+## The project is utlizing following tech and resources:
+  ### [Data Source](https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page)
+  ### [Data Warehouse](https://cloud.google.com/bigquery)
+  ### [Data Quality & Monitoring(https://docs.piperider.io/)
 
 ### Using the starter project
-
-Try running the following commands:
+Try running the following commands for dbt:
 - dbt run
 - dbt test
 
+Try running the following commands for piperider:
+- piperider run
+- piperider report --last
 
-### Resources:
-- Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
-- Check out [Discourse](https://discourse.getdbt.com/) for commonly asked questions and answers
-- Join the [dbt community](http://community.getbdt.com/) to learn from other analytics engineers
-- Find [dbt events](https://events.getdbt.com) near you
-- Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
+
+
+
