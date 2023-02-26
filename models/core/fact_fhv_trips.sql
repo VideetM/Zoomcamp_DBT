@@ -28,3 +28,4 @@ inner join
     dim_zones as pickup_zone on fhv_data.pickup_locationid = pickup_zone.locationid
 inner join
     dim_zones as dropoff_zone on fhv_data.dropoff_locationid = dropoff_zone.locationid
+where extract(year from fhv_data.pickup_datetime) = 2020
